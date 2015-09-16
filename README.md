@@ -103,7 +103,7 @@ Run the application unit tests.
 
     $ nosetests -v --with-coverage --cover-package=fibber --cover-erase --cover-branches --cover-html fibber/tests.py
 
-This will run all of the application unit tests with code coverage. A `cover` directory will be created with the HTML code coverage results.
+This will run all of the application unit tests with code coverage. A `cover` directory will be created in the project root directory with the HTML code coverage results.
 
     test_generate_result_with_invalid_sequence (fibber.tests.TestFibonacciResource) ... ok
     test_generate_result_with_valid_inputs (fibber.tests.TestFibonacciResource) ... ok
