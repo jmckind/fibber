@@ -59,8 +59,7 @@ Download and install the application dependencies.
 
 Once the dependencies have been installed, start the development server.
 
-    $ cd fibber
-    $ gunicorn fibber:app
+    $ gunicorn --chdir fibber server:app
 
 This will start the development server on the local machine, listening on port 8000. You should be able to access the application at [http://localhost:8000/](http://localhost:8000).
 
@@ -102,7 +101,7 @@ Once the application is running, hit the root URL with a number. This is size of
 
 Run the application tests from the `fibber` subdirectory.
 
-    $ nosetests -v --with-coverage --cover-package=fibber --cover-erase --cover-branches --cover-html tests.py
+    $ nosetests -v --with-coverage --cover-package=fibber --cover-erase --cover-branches --cover-html fibber/tests.py
 
 This will run all of the application unit tests with code coverage. A `cover` directory will be created with the HTML code coverage results.
 
