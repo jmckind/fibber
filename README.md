@@ -135,7 +135,7 @@ This will run all of the application unit tests with code coverage. A `cover` di
 
     OK
 
-## Heroku Deployment
+## Production Deployment on Heroku
 
 First, create a [Heroku](https://www.heroku.com) account if needed and install the [Heroku Toolbelt](https://toolbelt.heroku.com).
 
