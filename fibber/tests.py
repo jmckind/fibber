@@ -1,6 +1,7 @@
 from mock import Mock
 from unittest import TestCase
-import falcon, server
+from fibber import server
+import falcon
 
 class TestFibonacciResource(TestCase):
     def setUp(self):
