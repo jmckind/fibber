@@ -1,5 +1,7 @@
 # fibber
 
+[![Build Status](https://travis-ci.org/jmckind/fibber.svg?branch=master)](https://travis-ci.org/jmckind/fibber)
+
 A RESTful web service for generating Fibonacci numbers.
 
 ## Development
