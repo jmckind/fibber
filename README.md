@@ -4,6 +4,41 @@
 
 A RESTful web service for generating Fibonacci numbers.
 
+## Demo
+
+A demo service can be seen at [fibber.herokuapp.com](https://fibber.herokuapp.com).
+
+##### curl
+
+    $ curl https://fibber.herokuapp.com/5
+
+    {"sequence": "0 1 1 2 3", "numbers": [0, 1, 1, 2, 3], "n": 5}
+
+
+##### httpie
+
+    $ http https://fibber.herokuapp.com/5
+
+    HTTP/1.1 200 OK
+    Connection: keep-alive
+    Content-Length: 61
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 16 Sep 2015 20:02:53 GMT
+    Server: gunicorn/19.3.0
+    Via: 1.1 vegur
+
+    {
+        "n": 5,
+        "numbers": [
+            0,
+            1,
+            1,
+            2,
+            3
+        ],
+        "sequence": "0 1 1 2 3"
+    }
+
 ## Development
 
 Check out the source code to a directory on your local machine.
