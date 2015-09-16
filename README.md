@@ -103,4 +103,16 @@ This will run all of the application unit tests with code coverage. A `cover` di
 
 ## Heroku Deployment
 
-TODO
+First, create a [Heroku](https://www.heroku.com) account if needed and install the [Heroku Toolbelt](https://toolbelt.heroku.com).
+
+Next, log in via the command line.
+
+    $ heroku login
+
+Add the heroku git remote.
+
+    $ heroku git:remote -a fibber
+
+Finally, deploy the application.
+
+    $ git push heroku master
