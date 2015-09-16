@@ -99,7 +99,7 @@ Once the application is running, hit the root URL with a number. This is size of
 
 ## Testing
 
-Run the application tests from the `fibber` subdirectory.
+Run the application unit tests.
 
     $ nosetests -v --with-coverage --cover-package=fibber --cover-erase --cover-branches --cover-html fibber/tests.py
 
