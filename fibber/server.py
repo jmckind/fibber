@@ -33,7 +33,7 @@ class FibonacciResource:
                     % (self.min_value, self.max_value)
             )
         except Exception as e:
-            print("Unexpected error for input [%s]: %s" % (n, e.message))
+            print("Unexpected error for input [%s]: %s" % (n, e))
             raise falcon.HTTPInternalServerError(
                 'Unexpected Error', 'An unexpected error has occurred.'
             )
