@@ -76,10 +76,9 @@ class TestFibonacciResource(TestCase):
         mock_resp = Mock(falcon.Response)
 
         self.fib.on_get(mock_req, mock_resp, 1)
-        self.assertEquals(
-            '{"sequence": "0", "numbers": [0], "n": 1}',
-            mock_resp.body
-        )
+        self.assertIn('"sequence": "0"', mock_resp.body)
+        self.assertIn('"numbers": [0]', mock_resp.body)
+        self.assertIn('"n": 1', mock_resp.body)
 
     def test_on_get_with_invalid_integer(self):
         mock_req = Mock(falcon.Request)
